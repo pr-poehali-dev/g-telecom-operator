@@ -45,7 +45,7 @@ export function NavBar({ activeSection, onNav, onCabinet }: { activeSection: str
             <div className="w-9 h-9 rounded-lg bg-cyan-500 flex items-center justify-center">
               <span className="font-bold text-black text-lg" style={{ fontFamily: "Oswald" }}>G</span>
             </div>
-            <div className="absolute -inset-1 rounded-lg bg-cyan-500/20 blur-sm animate-pulse py-0" />
+            <div className="absolute -inset-1 rounded-lg bg-cyan-500/20 blur-sm animate-pulse" />
           </div>
           <span className="text-xl font-bold tracking-wider text-white" style={{ fontFamily: "Oswald" }}>G-TELECOM</span>
         </div>
@@ -70,7 +70,7 @@ export function NavBar({ activeSection, onNav, onCabinet }: { activeSection: str
             <Icon name="User" size={15} />
             Личный кабинет
           </button>
-          <button className="px-4 rounded-lg bg-cyan-500 text-black font-semibold text-sm hover:bg-cyan-400 transition-colors glow-cyan-sm py-2">
+          <button className="px-4 py-2 rounded-lg bg-cyan-500 text-black font-semibold text-sm hover:bg-cyan-400 transition-colors glow-cyan-sm">
             Подключиться
           </button>
           <button className="lg:hidden text-white/60" onClick={() => setMenuOpen(!menuOpen)}>
